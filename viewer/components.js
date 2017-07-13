@@ -397,7 +397,7 @@ var CodeView = React.createClass({
 		}
 
 		return displayClusters.map(function (member) {
-			var path = data.corpusData.corpus_path + "../../" + member.student + "/" + assignment + "/" + cluster.file;
+			var path = data.corpusData.corpus_path + "../../" + assignment + "/"  + member.student + "/" + cluster.file;
 			var partner = member.partner ? member.partner : "no partner";
 			var semester = member.semester;
 			var headerString = member.student + " [" + semester + "] (" + partner + ")";
